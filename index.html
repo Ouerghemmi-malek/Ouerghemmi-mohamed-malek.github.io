@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Malek Ouerghemmi | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { font-size: 1.2rem; }
+
+    nav {
+      background: #002244;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 10px;
+      color: #003366;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #003366;
+      color: #fff;
+      margin-top: 40px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #003366;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .btn:hover { background: #0055aa; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Mohamed Malek Ouerghemmi</h1>
+    <p>Electromechanical Engineer (Mechatronics) | Industrial Automation & IoT | Industry 4.0</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an Electromechanical Engineer with 10+ years of experience in designing, industrializing,
+      and maintaining special machines. My expertise covers CAD (SolidWorks, Abaqus), automation (Siemens PLC, WINCC),
+      embedded systems (STM32, FreeRTOS, FPGA), and IoT solutions. Passionate about Industry 4.0,
+      I aim to deliver innovative and efficient engineering solutions.
+    </p>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><strong>CAD & Simulation:</strong> SolidWorks, Abaqus, Altium Designer</div>
+      <div class="card"><strong>Automation:</strong> Siemens PLC, WINCC, TIA Portal</div>
+      <div class="card"><strong>Embedded Systems:</strong> STM32, FreeRTOS, FPGA, ESP32</div>
+      <div class="card"><strong>ERP & Quality:</strong> SAP S/4HANA, PFMEA, APQP, PPAP</div>
+      <div class="card"><strong>Languages:</strong> English, French, Arabic, German (basic)</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>IoT Supervision System</h3>
+        <p>Developed an ESP32 + Node-RED IoT system for real-time monitoring, reducing downtime by 20%.</p>
+      </div>
+      <div class="card">
+        <h3>Special Machines (EVOPRO)</h3>
+        <p>Designed and installed custom industrial machines, improving reliability and delivery by 15%.</p>
+      </div>
+      <div class="card">
+        <h3>Solar Sizing</h3>
+        <p>Optimized photovoltaic installations using PVSYST 7.2, reducing client energy consumption by 15%.</p>
+      </div>
+      <div class="card">
+        <h3>PCB Design</h3>
+        <p>Designed and prototyped electronic boards using Altium Designer for industrial applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ouerghemi.malek@gmail.com">ouerghemi.malek@gmail.com</a></p>
+    <p>Phone: (+216) 54 067 075</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-malek-ouerghemmi/" target="_blank">Profile</a></p>
+    <a class="btn" href="MohamedMalek_CV.pdf" download>Download My CV</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Mohamed Malek Ouerghemmi | Portfolio hosted on GitHub Pages</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
